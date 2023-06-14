@@ -1,9 +1,10 @@
+import LoginForm from "../../components/LoginForm"
 import { HomeContainer } from "./style"
 
-const Home = () => {
+const Home = ({setAuthentication}) => {
   return (
     <HomeContainer>
-      Home
+      <LoginForm setAuthentication={setAuthentication}/>
     </HomeContainer>
   )
 }
