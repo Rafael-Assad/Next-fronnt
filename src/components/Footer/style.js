@@ -5,13 +5,15 @@ export const FooterContainer = styled.footer`
   max-width: 100%;
   min-height: 3vh;
 
+  font-weight: 400;
+
   position: fixed;
   bottom: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EFEFEF;
+  background-color: #ccc;
 
   a{
     margin-left: 0.3rem;

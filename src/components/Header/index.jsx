@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <HeaderConteiner>
 
-    <Link to='/'>
+    <Link to='/login'>
       <figure>
         <img alt="Nex Logo" src={logoImg}/>
       </figure>
@@ -16,7 +16,7 @@ const Header = () => {
 
     <div>
       {authenticated ?
-        <Link to='/products'>
+        <Link to='/'>
           Products
         </Link> :
         <Link to='/register'>

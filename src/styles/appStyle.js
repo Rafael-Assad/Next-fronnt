@@ -17,6 +17,7 @@ export const MainContainer = styled.main`
   max-width: 100%;
   min-height: 82vh;
   margin-bottom: 3vh;
+  padding: 3rem 0;
 
   display: flex;
   align-items: center;

@@ -4,13 +4,13 @@ export const HeaderConteiner = styled.header`
   width: 100vw;
   max-width: 100%;
   height: 10vh;
-  background-color: #EFEFEF;
+  background-color: #F9F9F9;
 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
-  box-shadow: 0 4px 10px #0003;
+  box-shadow: 0 1px 7px #0003;
 
   figure{
     img{
@@ -22,5 +22,6 @@ export const HeaderConteiner = styled.header`
     text-decoration: none;
     color: #000;
     font-size: 1.5rem;
+    font-weight: 700;
   }
 `;

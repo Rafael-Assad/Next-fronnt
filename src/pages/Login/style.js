@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
-export const ProductsContainer = styled.div`
+export const LoginContainer = styled.div`
   width: 100%;
   height: 80vh;
-  background-color: #FFF;
+  background-color: #FDFDFD;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 
   font-size: 2rem;
-`;
+`; 

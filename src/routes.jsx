@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import {Routes as Switch, Route, useNavigate, useLocation} from 'react-router-dom'
 import axios from 'axios'
 
+import Login from './pages/Login'
 import Home from './pages/Home'
-import Products from './pages/Products'
 import Register from './pages/Register'
 
 const Routes = () => {
@@ -48,18 +48,14 @@ const Routes = () => {
   }
 
   if(!authentication){
-    if(location.pathname !== '/' && location.pathname !== '/register' ){
-      navigate('/')
+    if(location.pathname !== '/login' && location.pathname !== '/register' ){
+      navigate('/login')
     }
     
     return (
       <Switch>
-      <Route path='/'
-        element={ <Home setAuthentication={setAuthentication}/> }
-      />
-
-      <Route path='/products'
-        element={ <Products/> }
+      <Route path='/login'
+        element={ <Login setAuthentication={setAuthentication}/> }
       />
 
       <Route path='/register'
@@ -70,12 +66,12 @@ const Routes = () => {
 
   return (
     <Switch>
-      <Route path='/'
-        element={ <Home setAuthentication={setAuthentication}/> }
+      <Route path='/login'
+        element={ <Login setAuthentication={setAuthentication}/> }
       />
 
-      <Route path='/products'
-        element={ <Products/> }
+      <Route path='/'
+        element={ <Home/> }
       />
 
       <Route path='/register'

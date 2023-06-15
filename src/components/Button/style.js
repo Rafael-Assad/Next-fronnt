@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const ButtonContainer = styled.button`
-  min-width: 8rem;
+  min-width: 10rem;
   padding: 0.5rem ;
   
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   border: none;
   outline: none;
   font-family: 'Acme', sans-serif;
+  font-weight: 700;
   font-size: 1.3rem;
   line-height: 2rem;
 

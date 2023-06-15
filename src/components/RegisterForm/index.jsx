@@ -5,10 +5,10 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import Button from "../Button";
 import Input from "../Input";
 
 import { RegisterFormContainer } from "./style"
+import ButtonField from "../ButtonField";
 
 const RegisterForm = ({ setAuthentication }) => {
   const navigate = useNavigate()
@@ -85,11 +85,7 @@ const RegisterForm = ({ setAuthentication }) => {
           errors={errors}
         />
 
-        <div className="buttonField">
-          <Button type="submit" buttonName="Enviar" />
-
-          <Button type="reset" buttonName="Limpar" onClick={reset} />
-        </div>
+      <ButtonField reset={reset}/>
     </RegisterFormContainer>
   )
 }

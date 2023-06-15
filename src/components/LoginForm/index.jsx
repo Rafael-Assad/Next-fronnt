@@ -7,7 +7,7 @@ import * as yup from "yup";
 
 import { LoginFormContainer } from "./style"
 import Input from "../Input";
-import Button from "../Button";
+import ButtonField from "../ButtonField";
 
 const LoginForm = ({ setAuthentication }) => {
   const navigate = useNavigate()
@@ -61,11 +61,7 @@ const LoginForm = ({ setAuthentication }) => {
         />
 
 
-        <div className="buttonField">
-          <Button type="submit" buttonName="Enviar" />
-
-          <Button type="reset" buttonName="Limpar" onClick={reset} />
-        </div>
+        <ButtonField reset={reset}/>
     </LoginFormContainer>
   )
 }
