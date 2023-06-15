@@ -21,12 +21,15 @@ const Routes = () => {
     if(!token){
       setAuthentication(false)
       setFirstAuth(true)
+
+      window.localStorage.setItem("authenticated", false)
     }
 
     axios.get(authUrl, {headers:{ Authorization: token }})
       .then(() => {
         setAuthentication(true)
 
+        window.localStorage.setItem("authenticated", true)
         if(firstAuth) {
           navigate(location.pathname)
           setFirstAuth(false)

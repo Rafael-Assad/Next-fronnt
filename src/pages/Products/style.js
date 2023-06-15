@@ -8,6 +8,7 @@ export const ProductsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
   font-size: 2rem;
 `;

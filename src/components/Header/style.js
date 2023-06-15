@@ -11,4 +11,16 @@ export const HeaderConteiner = styled.header`
   justify-content: space-evenly;
 
   box-shadow: 0 4px 10px #0003;
+
+  figure{
+    img{
+      width: 12rem;
+    }
+  }
+  a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+  }
 `;

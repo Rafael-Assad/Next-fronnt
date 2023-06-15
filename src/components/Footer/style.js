@@ -10,6 +10,12 @@ export const FooterContainer = styled.footer`
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #EFEFEF;
+
+  a{
+    margin-left: 0.3rem;
+    text-decoration: none;
+    color: #00c;
+  }
 `;

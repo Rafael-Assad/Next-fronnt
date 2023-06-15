@@ -4,7 +4,13 @@ import { FooterContainer } from "./style"
 const Footer = () => {
   return (
     <FooterContainer>
-      Footer
+      Desenvolvido por 
+      <a href="https://github.com/Rafael-Assad"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Rafael Assad
+      </a> 
     </FooterContainer>
   )
 }
